@@ -9,9 +9,7 @@ const fetchData = () => {
         (response)=>{
             changeData(response.data)
         }
-    ).catch((err) => {
-         console.log(err)
-    })
+    ).catch()
 }
 useEffect(()=>{fetchData()},[])
   return (
